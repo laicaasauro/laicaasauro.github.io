@@ -3,36 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Laicakes Bakeshop | My Profile</title>
+    <title>My Profile | Laicakes</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <img src="logo.jpeg" alt="Logo" class="logo">
-        <h1>Laicakes Bakeshop</h1>
+        <h1 id="headerTitle">Laicakes Bakeshop</h1>
     </header>
     <div class="container">
         <nav class="sidebar">
             <a href="index.html">Home</a>
-            <a href="profile.html">My Profile</a>
-            <a href="index.html">Logout</a>
+            <a href="product.html">Product Catalog</a>
+            <a href="aboutus.html">About</a>
+            <a href="contactus.html">Contact Us</a>
+            <a href="cart.html">Shopping Cart</a>
+            <div style="margin-top: 20px; border-top: 1px solid var(--accent-color); padding-top: 10px;">
+                <a href="profile.html" class="active">My Profile</a>
+                <a href="login.html" onclick="logoutUser()" style="color: #e57373;">Logout</a>
+            </div>
         </nav>
+
         <main class="content">
-            <h2>User Profile</h2>
-            <div class="profile-grid">
-                <div class="profile-label">Full Name:</div>
-                <div>Laica Mae D. Asauro</div>
-
-                <div class="profile-label">Email:</div>
-                <div>laicaasauro07@gmail.com</div>
-
-                <div class="profile-label">Mobile:</div>
-                <div>0912-345-6789</div>
-
-                <div class="profile-label">Address:</div>
-                <div>2560 Tayuman St. Tondo, Manila</div>
+            <div class="form-container">
+                <h2>User Profile</h2>
+                <div class="profile-grid">
+                    <div class="profile-label">Full Name:</div>
+                    <div>Laica Asauro</div>
+                    
+                    <div class="profile-label">Email:</div>
+                    <div>laica@gmail.com</div>
+                    
+                    <div class="profile-label">Mobile:</div>
+                    <div>0939-905-5656</div>
+                    
+                    <div class="profile-label">Address:</div>
+                    <div>123 Sweet Street, Pastry City</div>
+                </div>
+                <button class="submit-btn" style="margin-top: 20px;">Edit Profile</button>
             </div>
         </main>
     </div>
+    <button class="theme-toggle" onclick="toggleTheme()">🌓 Switch Theme</button>
+    <script src="script.js"></script>
 </body>
 </html>
