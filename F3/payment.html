@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Checkout | Laicakes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="sidebar">
+    <a href="index.html">Home</a>
+    <a href="product.html">Product Catalog</a>
+    <a href="aboutus.html">About</a>
+    <a href="contactus.html">Contact Us</a>
+    
+    <a href="cart.html">Shopping Cart</a>
+    
+    <div style="margin-top: 20px; border-top: 1px solid var(--accent-color); padding-top: 10px;">
+        <a href="login.html">Login</a>
+        <a href="signup.html">Sign Up</a>
+        <a href="profile.html" class="profile-link">My Profile</a>
+        <a href="login.html" onclick="logoutUser()" style="color: #e57373;">Logout</a>
+    </div>
+</nav>
+
+    <div class="form-container">
+        <h2>Checkout Details</h2>
+        <form action="confirmation.html">
+            <div class="input-group">
+                <label>Delivery Option</label>
+                <select style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid var(--accent-color);">
+                    <option>Standard Delivery (3-5 Days)</option>
+                    <option>Express Delivery (Next Day)</option>
+                    <option>Store Pickup</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label>Payment Method</label>
+                <input type="radio" name="pay" checked> Cash on Delivery <br>
+                <input type="radio" name="pay"> GCash / E-Wallet
+            </div>
+            <button type="submit" class="submit-btn">Confirm Order</button>
+        </form>
+    </div>
+    </div>
+</body>
+</html>
