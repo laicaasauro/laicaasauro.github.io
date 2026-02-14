@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/ldawebshop/static/css/main.03bd1cd2.css",
-    "main.js": "/ldawebshop/static/js/main.13a42437.js",
+    "main.js": "/ldawebshop/static/js/main.45b9488c.js",
     "index.html": "/ldawebshop/index.html",
     "main.03bd1cd2.css.map": "/ldawebshop/static/css/main.03bd1cd2.css.map",
-    "main.13a42437.js.map": "/ldawebshop/static/js/main.13a42437.js.map"
+    "main.45b9488c.js.map": "/ldawebshop/static/js/main.45b9488c.js.map"
   },
   "entrypoints": [
     "static/css/main.03bd1cd2.css",
-    "static/js/main.13a42437.js"
+    "static/js/main.45b9488c.js"
   ]
 }

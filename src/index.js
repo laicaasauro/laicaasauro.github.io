@@ -50,7 +50,7 @@ function ProductCatalog({ isLoggedIn, setIsLoggedIn }) {
   return (
     <div style={pageStyle}>
       <header>
-        <img src="/logo.jpeg" alt="Logo" className="logo" />
+        <img src="logo.jpeg" alt="Logo" className="logo" />
         <h1>Laicakes Bakeshop - Catalog</h1>
       </header>
       <div className="container" style={{ flex: 1 }}>
@@ -58,19 +58,19 @@ function ProductCatalog({ isLoggedIn, setIsLoggedIn }) {
         <main className="content">
           <div className="catalog-grid">
             <div className="card">
-              <img src="/chocolate.png" alt="Chocolate Cake" className="cake-img" />
+              <img src="chocolate.png" alt="Chocolate Cake" className="cake-img" />
               <h3>Double Chocolate Cake</h3>
               <p>₱545.00</p>
               <button className="submit-btn">Add to Cart</button>
             </div>
             <div className="card">
-              <img src="/ube.png" alt="Ube Cake" className="cake-img" />
+              <img src="ube.png" alt="Ube Cake" className="cake-img" />
               <h3>Ube Custard Cake</h3>
               <p>₱345.00</p>
               <button className="submit-btn">Add to Cart</button>
             </div>
             <div className="card">
-              <img src="/rainbow.png" alt="Rainbow Cake" className="cake-img" />
+              <img src="rainbow.png" alt="Rainbow Cake" className="cake-img" />
               <h3>Rainbow Buttercream</h3>
               <p>₱345.00</p>
               <button className="submit-btn">Add to Cart</button>
@@ -87,26 +87,26 @@ function ProductCatalog({ isLoggedIn, setIsLoggedIn }) {
 function HomePage({ isLoggedIn, setIsLoggedIn }) {
   return (
     <div className="main-wrapper">
-      <header><img src="/logo.jpeg" className="logo" alt="Logo" /><h1>Laicakes Bakeshop</h1></header>
+      <header><img src="logo.jpeg" className="logo" alt="Logo" /><h1>Laicakes Bakeshop</h1></header>
       <div className="container">
         <Sidebar isLoggedIn={isLoggedIn} activePage="home" setIsLoggedIn={setIsLoggedIn} />
         <main className="content">
           <h2>Our Featured Delights</h2>
           <div className="catalog-grid">
             <div className="card">
-              <img src="/blackforest.jpeg" className="cake-img" alt="Black Forest" />
+              <img src="blackforest.jpeg" className="cake-img" alt="Black Forest" />
               <h3>Black Forest Cake</h3>
               <p className="product-price">₱950.00</p>
               <button className="submit-btn">View Details</button>
             </div>
             <div className="card">
-              <img src="/shortcake.jpeg" className="cake-img" alt="Strawberry Shortcake" />
+              <img src="shortcake.jpeg" className="cake-img" alt="Strawberry Shortcake" />
               <h3>Strawberry Shortcake</h3>
               <p className="product-price">₱850.00</p>
               <button className="submit-btn">View Details</button>
             </div>
             <div className="card">
-              <img src="/redvelvet.jpeg" className="cake-img" alt="Red Velvet" />
+              <img src="redvelvet.jpeg" className="cake-img" alt="Red Velvet" />
               <h3>Red Velvet Cake</h3>
               <p className="product-price">₱900.00</p>
               <button className="submit-btn">View Details</button>
@@ -122,7 +122,7 @@ function HomePage({ isLoggedIn, setIsLoggedIn }) {
 function AboutUs({ isLoggedIn, setIsLoggedIn }) {
   return (
     <div className="main-wrapper">
-      <header><img src="/logo.jpeg" alt="Logo" className="logo" /><h1>Laicakes Bakeshop</h1></header>
+      <header><img src="logo.jpeg" alt="Logo" className="logo" /><h1>Laicakes Bakeshop</h1></header>
       <div className="container">
         <Sidebar isLoggedIn={isLoggedIn} activePage="about" setIsLoggedIn={setIsLoggedIn} />
         <main className="content">
@@ -146,7 +146,7 @@ function ContactUs({ isLoggedIn, setIsLoggedIn }) {
   const handleSubmit = (e) => { e.preventDefault(); alert("Inquiry sent!"); };
   return (
     <div className="main-wrapper">
-      <header><img src="/logo.jpeg" alt="Logo" className="logo" /><h1>Laicakes Bakeshop</h1></header>
+      <header><img src="logo.jpeg" alt="Logo" className="logo" /><h1>Laicakes Bakeshop</h1></header>
       <div className="container">
         <Sidebar isLoggedIn={isLoggedIn} activePage="contact" setIsLoggedIn={setIsLoggedIn} />
         <main className="content">
@@ -177,7 +177,7 @@ function ShoppingCart({ isLoggedIn, setIsLoggedIn }) {
   return (
     <div className="main-wrapper">
       <header>
-        <img src="/logo.jpeg" alt="Logo" className="logo" />
+        <img src="logo.jpeg" alt="Logo" className="logo" />
         <h1>Laicakes Bakeshop</h1>
       </header>
 
@@ -248,7 +248,7 @@ function LoginPage({ isLoggedIn, setIsLoggedIn }) {
 function SignUp({ isLoggedIn, setIsLoggedIn }) {
   return (
     <div className="main-wrapper">
-      <header><img src="/logo.jpeg" alt="Logo" className="logo" /><h1>Laicakes Bakeshop</h1></header>
+      <header><img src="logo.jpeg" alt="Logo" className="logo" /><h1>Laicakes Bakeshop</h1></header>
       <div className="container">
         <Sidebar isLoggedIn={isLoggedIn} activePage="signup" setIsLoggedIn={setIsLoggedIn} />
         <main className="content">
@@ -322,7 +322,7 @@ function PaymentPage({ isLoggedIn, setIsLoggedIn }) {
   return (
     <div className="main-wrapper">
       <header>
-        <img src="/logo.jpeg" alt="Logo" className="logo" />
+        <img src="logo.jpeg" alt="Logo" className="logo" />
         <h1>Checkout - Laicakes</h1>
       </header>
       <div className="container">
