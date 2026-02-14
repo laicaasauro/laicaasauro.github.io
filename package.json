@@ -12,7 +12,6 @@
   "deploy": "gh-pages -d build"
 },
 "homepage": "https://laicaasauro.github.io/ldawebshop",
-
   "dependencies": {
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
