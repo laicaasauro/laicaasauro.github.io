@@ -1,6 +1,14 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import App from './App'; // This points to your shop code
+import { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
+import { BrowserRouter } from 'react-router-dom' // 1. Add this import
+import './index.css'
+import App from './App.jsx'
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<App />);
+// 2. This replaces your old createRoot block entirely
+createRoot(document.getElementById('root')).render(
+  <StrictMode>
+    <BrowserRouter basename="/ldawebshop">
+      <App />
+    </BrowserRouter>
+  </StrictMode>,
+)
