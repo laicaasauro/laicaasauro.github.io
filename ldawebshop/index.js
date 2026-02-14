@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import './style.css'; 
 
-// --- REUSABLE FOOTER COMPONENT ---
 function Footer() {
   return (
     <footer>
@@ -13,7 +12,6 @@ function Footer() {
   );
 }
 
-// --- SMART SIDEBAR COMPONENT ---
 function Sidebar({ isLoggedIn, activePage, setIsLoggedIn }) {
   return (
     <nav className="sidebar">
@@ -40,7 +38,6 @@ function Sidebar({ isLoggedIn, activePage, setIsLoggedIn }) {
   );
 }
 
-// --- PRODUCT CATALOG ---
 function ProductCatalog({ isLoggedIn, setIsLoggedIn }) {
   const [isDarkMode, setIsDarkMode] = useState(false);
   const toggleTheme = () => setIsDarkMode(!isDarkMode);
@@ -87,7 +84,6 @@ function ProductCatalog({ isLoggedIn, setIsLoggedIn }) {
   );
 }
 
-// --- HOME PAGE ---
 function HomePage({ isLoggedIn, setIsLoggedIn }) {
   return (
     <div className="main-wrapper">
@@ -123,7 +119,6 @@ function HomePage({ isLoggedIn, setIsLoggedIn }) {
   );
 }
 
-// --- ABOUT US ---
 function AboutUs({ isLoggedIn, setIsLoggedIn }) {
   return (
     <div className="main-wrapper">
@@ -147,7 +142,6 @@ function AboutUs({ isLoggedIn, setIsLoggedIn }) {
   );
 }
 
-// --- CONTACT US ---
 function ContactUs({ isLoggedIn, setIsLoggedIn }) {
   const handleSubmit = (e) => { e.preventDefault(); alert("Inquiry sent!"); };
   return (
@@ -179,8 +173,6 @@ function ContactUs({ isLoggedIn, setIsLoggedIn }) {
   );
 }
 
-// --- SHOPPING CART ---
-// --- SHOPPING CART ---
 function ShoppingCart({ isLoggedIn, setIsLoggedIn }) {
   return (
     <div className="main-wrapper">
@@ -230,7 +222,6 @@ function ShoppingCart({ isLoggedIn, setIsLoggedIn }) {
   );
 }
 
-// --- LOGIN PAGE ---
 function LoginPage({ isLoggedIn, setIsLoggedIn }) {
   const handleLogin = (e) => { e.preventDefault(); setIsLoggedIn(true); alert("Login successful!"); };
   return (
@@ -254,7 +245,6 @@ function LoginPage({ isLoggedIn, setIsLoggedIn }) {
   );
 }
 
-// --- SIGN UP ---
 function SignUp({ isLoggedIn, setIsLoggedIn }) {
   return (
     <div className="main-wrapper">
@@ -273,7 +263,6 @@ function SignUp({ isLoggedIn, setIsLoggedIn }) {
   );
 }
 
-// --- USER PROFILE ---
 function UserProfile({ isLoggedIn, setIsLoggedIn }) {
   const [isDarkMode, setIsDarkMode] = useState(false);
   
@@ -300,7 +289,7 @@ function UserProfile({ isLoggedIn, setIsLoggedIn }) {
           <div className="form-container" style={{color: '#000'}}>
             <h2>User Profile</h2>
             
-            {/* Restored the Profile Grid and specific info */}
+            {}
             <div className="profile-grid">
               <div className="profile-label">Full Name:</div>
               <div>Laica Asauro</div>
@@ -319,7 +308,7 @@ function UserProfile({ isLoggedIn, setIsLoggedIn }) {
         </main>
       </div>
 
-      {/* Theme Toggle Button */}
+      {}
       <button className="theme-toggle" onClick={() => setIsDarkMode(!isDarkMode)}>
         🌓 {isDarkMode ? 'Light' : 'Dark'} Theme
       </button>
@@ -329,7 +318,6 @@ function UserProfile({ isLoggedIn, setIsLoggedIn }) {
   );
 }
 
-// --- PAYMENT PAGE ---
 function PaymentPage({ isLoggedIn, setIsLoggedIn }) {
   return (
     <div className="main-wrapper">
@@ -339,7 +327,7 @@ function PaymentPage({ isLoggedIn, setIsLoggedIn }) {
       </header>
       <div className="container">
         <nav className="sidebar">
-          {/* Original specific sidebar link for this page */}
+          {}
           <Link to="/cart">Back to Cart</Link>
         </nav>
         <main className="content">
@@ -376,7 +364,6 @@ function PaymentPage({ isLoggedIn, setIsLoggedIn }) {
   );
 }
 
-// --- MAIN APP ---
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   return (
@@ -398,4 +385,5 @@ function App() {
 }
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
 root.render(<App />);
