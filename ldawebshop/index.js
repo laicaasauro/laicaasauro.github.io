@@ -366,8 +366,9 @@ function PaymentPage({ isLoggedIn, setIsLoggedIn }) {
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
+
   return (
-    <Router>
+    <Router basename="/ldawebshop"> 
       <Routes>
         <Route path="/" element={<HomePage isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />} />
         <Route path="/products" element={<ProductCatalog isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />} />
@@ -378,6 +379,7 @@ function App() {
         <Route path="/signup" element={<SignUp isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />} />
         <Route path="/profile" element={<UserProfile isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />} />
         <Route path="/payment" element={<PaymentPage isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />} />
+        {}
         <Route path="*" element={<HomePage isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />} />
       </Routes>
     </Router>
@@ -387,3 +389,4 @@ function App() {
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(<App />);
+
