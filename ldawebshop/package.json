@@ -6,8 +6,8 @@
   "scripts": {
   "start": "react-scripts start",
   "build": "react-scripts build",
-  "predeploy": "vite build",
-  "deploy": "gh-pages -d dist"
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d build"
 },
 "homepage": "https://laicaasauro.github.io/ldawebshop",
   "dependencies": {
