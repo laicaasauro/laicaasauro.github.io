@@ -1,35 +1,36 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React, { useState } from 'react';
+import './App.css';
 
 function App() {
-  const [count, setCount] = useState(0)
+  // Replace these with your actual cake details!
+  const [cakes] = useState([
+    { id: 1, name: "Chocolate Cake", price: "₱500", img: "chocolate.png" },
+    { id: 2, name: "Ube Cake", price: "₱600", img: "ube.png" },
+    { id: 3, name: "Red Velvet", price: "₱550", img: "redvelvet.png" }
+  ]);
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className="App">
+      <header className="shop-header">
+        <h1>Welcome to LDA Webshop</h1>
+        <p>Delicious Homemade Cakes</p>
+      </header>
+
+      <div className="cake-grid">
+        {cakes.map(cake => (
+          <div key={cake.id} className="cake-card">
+            {/* Note: Images must be inside your "public" folder */}
+            <img src={cake.img} alt={cake.name} style={{ width: '200px' }} />
+            <h3>{cake.name}</h3>
+            <p>{cake.price}</p>
+            <button onClick={() => alert(`${cake.name} added to cart!`)}>
+              Order Now
+            </button>
+          </div>
+        ))}
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    </div>
+  );
 }
 
-export default App
+export default App;
